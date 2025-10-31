@@ -118,7 +118,7 @@ function updateFooter() {
 
   // ensure span exists and update
   const footerText = ensureFooterTextSpan();
-  footerText.textContent = `Total Tasks: ${allTasks}  |  Completed: ${completedTasks}  |  Pending: ${pendingTasks}`;
+  footerText.innerHTML = `Total Tasks: ${allTasks}  |  Completed: ${completedTasks}  |  Pending: ${pendingTasks} <hr />`;
 
   // Show/hide footer and button (use your CSS classes)
   if (allTasks === 0) {
